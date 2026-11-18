@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Karthiga Devi ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="progress"><div id="progressBar"></div></div>
+
+<div class="music-control">
+    <button id="musicBtn" onclick="toggleMusic()">♫ Music</button>
+    <audio id="music" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<main>
+
+    <!-- PAGE 1: WELCOME -->
+    <section class="chapter active pink" id="page1">
+        <div class="stars">✦　✧　✦</div>
+        <p class="eyebrow">A LITTLE SOMETHING FOR SOMEONE SPECIAL</p>
+        <h1 class="script">Hey, Karthiga!</h1>
+        <p class="subtitle">Someone has prepared a little surprise for you...</p>
+        <div class="flower">🌸</div>
+        <button class="main-btn" onclick="nextPage()">Open Your Surprise ♡</button>
+        <p class="small-note">Made with friendship & lots of love</p>
+    </section>
+
+    <!-- PAGE 2: BIRTHDAY -->
+    <section class="chapter pink" id="page2">
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <h1 class="script">Happy Birthday</h1>
+        <h2 class="name">Karthiga Devi</h2>
+        <div class="photo-frame hero-frame">
+            <img src="images/karthiga.jpg" alt="Karthiga">
+        </div>
+        <p class="subtitle">May your world always be filled with happiness, laughter and beautiful memories.</p>
+        <button class="main-btn" onclick="nextPage()">Continue the Surprise →</button>
+    </section>
+
+    <!-- PAGE 3: SPECIAL PERSON -->
+    <section class="chapter lavender" id="page3">
+        <p class="eyebrow">CHAPTER 01 · SOMEONE SPECIAL</p>
+        <h1 class="script">A Beautiful Soul</h1>
+        <div class="big-flower">🦋</div>
+        <div class="message-card">
+            <p>Some people make life beautiful without even trying.</p>
+            <p>Some people turn ordinary days into unforgettable memories.</p>
+            <p>And some people are simply impossible to replace.</p>
+            <h2 class="script">You're one of them, Karthiga!</h2>
+        </div>
+        <button class="main-btn" onclick="nextPage()">Next Chapter →</button>
+    </section>
+
+    <!-- PAGE 4: MEMORIES -->
+    <section class="chapter peach" id="page4">
+        <p class="eyebrow">CHAPTER 02 · LITTLE MOMENTS</p>
+        <h1 class="script">Our Memories</h1>
+        <p class="subtitle">Every picture has a story. Every story has a memory.</p>
+
+        <div class="gallery">
+            <div class="memory"><img src="images/photo1.jpg" alt="Memory 1"><p>Beautiful moments ♡</p></div>
+            <div class="memory"><img src="images/photo2.jpg" alt="Memory 2"><p>Unforgettable days ✨</p></div>
+            <div class="memory"><img src="images/photo3.jpg" alt="Memory 3"><p>Endless laughter</p></div>
+            <div class="memory"><img src="images/photo4.jpg" alt="Memory 4"><p>Our little memories</p></div>
+            <div class="memory"><img src="images/photo5.jpg" alt="Memory 5"><p>More memories to come!</p></div>
+        </div>
+        <button class="main-btn" onclick="nextPage()">More About Us →</button>
+    </section>
+
+    <!-- PAGE 5: FRIENDSHIP -->
+    <section class="chapter cream" id="page5">
+        <p class="eyebrow">CHAPTER 03 · OUR FRIENDSHIP</p>
+        <h1 class="script">Our Little Story</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span>♡</span>
+                <h3>The Beginning</h3>
+                <p>Who knew that an ordinary beginning would turn into such a beautiful friendship?</p>
+            </div>
+            <div class="timeline-item">
+                <span>✦</span>
+                <h3>The Memories</h3>
+                <p>Random talks, silly jokes, laughter and moments worth remembering.</p>
+            </div>
+            <div class="timeline-item">
+                <span>∞</span>
+                <h3>The Future</h3>
+                <p>More adventures, more laughter and countless memories waiting for us.</p>
+            </div>
+        </div>
+        <button class="main-btn" onclick="nextPage()">Keep Going →</button>
+    </section>
+
+    <!-- PAGE 6: REASONS -->
+    <section class="chapter pink" id="page6">
+        <p class="eyebrow">CHAPTER 04 · JUST BECAUSE</p>
+        <h1 class="script">Things That Make You Special</h1>
+        <div class="reason-grid">
+            <div class="reason">♡<p>Your beautiful smile</p></div>
+            <div class="reason">✦<p>Your kind heart</p></div>
+            <div class="reason">🌸<p>Your unique personality</p></div>
+            <div class="reason">😂<p>Your funny side</p></div>
+            <div class="reason">🦋<p>Your positive energy</p></div>
+            <div class="reason">∞<p>Simply being YOU</p></div>
+        </div>
+        <button class="main-btn" onclick="nextPage()">One Funny Chapter →</button>
+    </section>
+
+    <!-- PAGE 7: FUNNY -->
+    <section class="chapter lavender" id="page7">
+        <p class="eyebrow">CHAPTER 05 · WARNING!</p>
+        <h1 class="script">A Serious Announcement</h1>
+        <div class="funny-card">
+            <div class="big-emoji">😂</div>
+            <h2>Official Birthday Notice!</h2>
+            <p>Congratulations! You've successfully survived another year of life.</p>
+            <p>Unfortunately, your subscription to my friendship is permanent.</p>
+            <p>No refunds. No cancellations. No escape!</p>
+            <h2 class="script">Happy Birthday, Crazy Person!</h2>
+        </div>
+        <button class="main-btn" onclick="nextPage()">A Letter For You →</button>
+    </section>
+
+    <!-- PAGE 8: LETTER -->
+    <section class="chapter black" id="page8">
+        <p class="eyebrow gold-text">CHAPTER 06 · FROM MY HEART</p>
+        <h1 class="script gold-text">A Little Letter</h1>
+
+        <div class="envelope" id="envelope" onclick="openLetter()">
+            <div class="envelope-icon">💌</div>
+            <p>Something special is waiting inside...</p>
+            <button class="gold-btn">Open My Letter</button>
+        </div>
+
+        <div class="letter hidden" id="letter">
+            <h2 class="script">Dear Karthiga,</h2>
+            <p>On your special day, I just want to remind you how wonderful you are.</p>
+            <p>Life is full of different people, but only a few become beautiful memories. I'm genuinely glad to have you as my friend.</p>
+            <p>Thank you for all the little moments, random conversations, laughter and craziness.</p>
+            <p>I hope this new chapter of your life brings you endless happiness, success, peace and everything your heart wishes for.</p>
+            <p>Never stop being the amazing person you are.</p>
+            <h2 class="script">With lots of friendship & wishes ♡</h2>
+        </div>
+        <button class="main-btn" onclick="nextPage()">Birthday Wishes →</button>
+    </section>
+
+    <!-- PAGE 9: WISHES -->
+    <section class="chapter peach" id="page9">
+        <p class="eyebrow">CHAPTER 07 · WISHING YOU THE BEST</p>
+        <h1 class="script">My Wishes For You</h1>
+        <div class="wish-list">
+            <p>🌸 May your smile never fade.</p>
+            <p>✨ May your dreams become reality.</p>
+            <p>🦋 May happiness find you everywhere.</p>
+            <p>💫 May success follow every step you take.</p>
+            <p>❤️ May you always be surrounded by genuine people.</p>
+            <p>🌷 May this year be your most beautiful chapter yet.</p>
+        </div>
+        <button class="main-btn" onclick="nextPage()">The Final Celebration →</button>
+    </section>
+
+    <!-- PAGE 10: CAKE -->
+    <section class="chapter cream" id="page10">
+        <p class="eyebrow">CHAPTER 08 · MAKE A WISH</p>
+        <h1 class="script">It's Cake Time!</h1>
+        <p class="subtitle">Tap the candle to make your birthday wish!</p>
+
+        <div class="cake-area">
+            <div class="flame" id="flame" onclick="blowCandle()">🔥</div>
+            <div class="candle"></div>
+            <div class="cake-top"></div>
+            <div class="cake-body"></div>
+            <div class="cake-plate"></div>
+        </div>
+
+        <p id="cakeMessage" class="cake-message">Make a wish, Karthiga! ✨</p>
+        <button class="main-btn" onclick="nextPage()">One Last Surprise →</button>
+    </section>
+
+    <!-- PAGE 11: FINAL -->
+    <section class="chapter final-page pink" id="page11">
+        <div class="stars">✦　✧　✦</div>
+        <p class="eyebrow">THE END OF THIS SURPRISE</p>
+        <h1 class="script">Happy Birthday Again!</h1>
+        <h2 class="name">Karthiga Devi ❤️</h2>
+        <div class="final-flower">🌷</div>
+        <p class="final-message">
+            This website may have an ending,<br>
+            but our memories don't have to.
+        </p>
+        <h2 class="script">Stay Happy. Stay Amazing.</h2>
+        <p class="subtitle">With best wishes, always ♡</p>
+        <button class="main-btn" onclick="restartWebsite()">Replay Our Memories ↻</button>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
